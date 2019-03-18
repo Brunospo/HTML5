@@ -9,45 +9,20 @@
 
 	<body>
 
-		<h2>Produto</h2>
+		<h2>Login</h2>
+		
+		<form>
+			Login:<br>
+			<input type="text" name="login"> <!--Sempre tem que colocar o atributo type no input. O type se refere aos tipos de dados que vão entrar, texto ou senha. Também pode ser colocado o name, que é um tipo de recuperação dos dados, é como se fosse o nome de uma variavel que será passada para o PHP, por exemplo -->
+			<br>
+			Senha:<br>
+			<input type="password" name="senha">
+			<br>
+			<input type="button" value="logar"> <!--Nesse caso aqui, ao inves do name, usamos o atributo value para colocar a palavra o 'logar' como o nome do botão, não usa o name pois não queremos recuperar os dados desse input -->
 
-		<table border="3" width="50%"> <!--Tem que definir o tamanho da borda, senão fica sem e a visualizaçao fica feia -->
-			<!--O Width defife o tamanho da tabela, se colocar o simbolo %,
-			 o tamnahdo da tabela fica proporcional a tela -- >
+			<!--Ao inves de button, poderiamos escrever subimmit para enviar o formulario, mas para isso precisaria haver um processamento desses dadod (PHP) -->
 
-			<tr>
-				<th>Código</th> <!-- A tag <th> indica o titulo da coluna -->
-				<th>produto</th>
-				<th>Preço</th>
-			</tr>
-
-			<tr>
-				<td>001</td>
-				<td>Notebook</td>
-				<td>R$1599,99</td>
-			</tr>
-
-			<tr>
-				<td>002</td>
-				<td>Tablet</td>
-				<td>R$999,99</td>
-			</tr>
-
-			<tr>
-				<td rowspan="2">Desconto</td> <!--O Rowspan define a mesclagem de linhas -->
-				<td colspan="2">Cupom1 - R$10,00</td> <!--O Colspan define a mesclagem de colunas -->
-			</tr>
-
-			<tr>
-				<td colspan="2">Cupom2 - R$12,00</td>
-			</tr>
-
-			<tr>
-				<td>Total</td>
-				<td colspan="2">R$9999,99</td>
-			</tr>
-
-		</table>
+		</form>
 
 	</body>
 
