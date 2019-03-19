@@ -1,29 +1,58 @@
 <!DOCTYPE html>
 
 <html>
-
-	<head>
-		<title>Meu Site</title>
+	
+	<head> 
+		<title>Meu site</title>
 		<meta charset="utf-8">
 	</head>
 
 	<body>
-
 		<h2>Login</h2>
-		
+
 		<form>
 			Login:<br>
-			<input type="text" name="login"> <!--Sempre tem que colocar o atributo type no input. O type se refere aos tipos de dados que vão entrar, texto ou senha. Também pode ser colocado o name, que é um tipo de recuperação dos dados, é como se fosse o nome de uma variavel que será passada para o PHP, por exemplo -->
-			<br>
+			<input type="text" name= "login"><br>
 			Senha:<br>
-			<input type="password" name="senha">
-			<br>
-			<input type="button" value="logar"> <!--Nesse caso aqui, ao inves do name, usamos o atributo value para colocar a palavra o 'logar' como o nome do botão, não usa o name pois não queremos recuperar os dados desse input -->
-
-			<!--Ao inves de button, poderiamos escrever subimmit para enviar o formulario, mas para isso precisaria haver um processamento desses dadod (PHP) -->
-
+			<input type="password" name="senha"><br>
+			<input type= "button" value="logar">
 		</form>
 
+		<br>
+
+		<hr>
+
+		<h2>Cadastre-se</h2>
+
+		<form>
+
+			Login:<br>
+			<input type="text" name="Login"><br><br>
+			Sexo:<br>
+			<!--Foi utilizado o Type radio pois o usuario deve selecionar apenas uma opção -->
+			<input type="radio" name="sexo" value="M">Masculino 
+			<br><!--Foi utilizado o mesmo name pois o usuário so pode selecionar apenas um dos dois. O que será passado, posteriormente, no subimit, será o value -->
+			<input type="radio" name="sexo" value="F">Feminino
+			<br>
+			Interesses:<br>
+			<!--Foi utilizado o Type checkbox pois o usuario pode selecionar varias ou nenhuma opção. O name pode ser o mesmo-->
+			<input type="checkbox" name="interesses">Futebol<br>
+			<input type="checkbox" name="interesses">Cursos<br>
+			<input type="checkbox" name="interesses">Moda<br>
+			Estado:<br>
+			<!--Foi utilizado a Tag Selec e option para mostrar uma lista de opções para o usuário selecionar uma-->
+			<select name="estado">
+				<option value="sp">SP</option>
+				<option value="mg">MG</option>
+				<option value="ba">BA</option>
+			</select><br>
+
+			Observações:<br>
+			<!--Tag textarea serve para criar uma caixa de texto para o usuário -->
+			<textarea></textarea><br><br>
+			<input type="submit" value="Cadastrar">
+
+		</form>
 	</body>
 
 </html>
