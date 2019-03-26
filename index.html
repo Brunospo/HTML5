@@ -1,58 +1,49 @@
 <!DOCTYPE html>
-
 <html>
-	
-	<head> 
-		<title>Meu site</title>
+	<head>
+		<title>UNES- Página inicial</title>
 		<meta charset="utf-8">
 	</head>
+	<!-- OBS: Esse site foi criado usando o esquema de tabelas. Mas essa não é a melhor pratica. -->
 
-	<body>
-		<h2>Login</h2>
+	<body background="Imagens/fundo.png"> <!--O atributo background define o que fica atras da pagina -->
 
-		<form>
-			Login:<br>
-			<input type="text" name= "login"><br>
-			Senha:<br>
-			<input type="password" name="senha"><br>
-			<input type= "button" value="logar">
-		</form>
+		<table align="center" width="900" border="0">
 
-		<br>
+			<tr height="89">
+				<td>
+					<img src="Imagens/logo.png">
+				</td>
+				<td align="right">
+					<a href="">Home</a> |
+					<a href="quemsomos.html">Quem Somos</a> |
+					<a href="contato.html">Contato</a>
+				</td>
+			</tr>
 
-		<hr>
+			<tr>
+				<td colspan="2">
+					<img src="Imagens/capa.png" alt="imagem da capa">
+				</td>
+			</tr>
 
-		<h2>Cadastre-se</h2>
+			<tr>
+				<td colspan="2">
+					<h2>Sobre a Universidade</h2>
 
-		<form>
+					<p>Lorem <strong>ipsum dolor</strong> sit <em>amet</em>, consectetur adipiscing elit. Proin nisi est, volutpat in nulla eget, pellentesque euismod nisl. In sed sem ac justo ullamcorper porta. Aliquam ultrices, est in mattis cursus, nibh ligula bibendum augue, nec faucibus nunc ante et eros. Praesent rhoncus hendrerit mauris, eget venenatis dui molestie quis. Nulla euismod ex et gravida volutpat. Suspendisse gravida pretium elit id placerat. Curabitur dictum ipsum ac ligula aliquet, sit amet tempor metus faucibus. Donec gravida risus non elementum fringilla. Aliquam sit amet ullamcorper libero. Integer in ornare nisl, ut dignissim est. Cras sed ligula ultrices, bibendum enim ut, fringilla massa. Phasellus nisi justo, mattis at posuere ac, aliquet nec ipsum.</p>
 
-			Login:<br>
-			<input type="text" name="Login"><br><br>
-			Sexo:<br>
-			<!--Foi utilizado o Type radio pois o usuario deve selecionar apenas uma opção -->
-			<input type="radio" name="sexo" value="M">Masculino 
-			<br><!--Foi utilizado o mesmo name pois o usuário so pode selecionar apenas um dos dois. O que será passado, posteriormente, no subimit, será o value -->
-			<input type="radio" name="sexo" value="F">Feminino
-			<br>
-			Interesses:<br>
-			<!--Foi utilizado o Type checkbox pois o usuario pode selecionar varias ou nenhuma opção. O name pode ser o mesmo-->
-			<input type="checkbox" name="interesses">Futebol<br>
-			<input type="checkbox" name="interesses">Cursos<br>
-			<input type="checkbox" name="interesses">Moda<br>
-			Estado:<br>
-			<!--Foi utilizado a Tag Selec e option para mostrar uma lista de opções para o usuário selecionar uma-->
-			<select name="estado">
-				<option value="sp">SP</option>
-				<option value="mg">MG</option>
-				<option value="ba">BA</option>
-			</select><br>
+					<p>Lorem <strong>ipsum dolor</strong> sit <em>amet</em>, consectetur adipiscing elit. Proin nisi est, volutpat in nulla eget, pellentesque euismod nisl. In sed sem ac justo ullamcorper porta. Aliquam ultrices, est in mattis cursus, nibh ligula bibendum augue, nec faucibus nunc ante et eros. Praesent rhoncus hendrerit mauris, eget venenatis dui molestie quis. Nulla euismod ex et gravida volutpat. Suspendisse gravida pretium elit id placerat. Curabitur dictum ipsum ac ligula aliquet, sit amet tempor metus faucibus. Donec gravida risus non elementum fringilla. Aliquam sit amet ullamcorper libero. Integer in ornare nisl, ut dignissim est. Cras sed ligula ultrices, bibendum enim ut, fringilla massa. Phasellus nisi justo, mattis at posuere ac, aliquet nec ipsum.</p>
+				</td>
+			</tr>
 
-			Observações:<br>
-			<!--Tag textarea serve para criar uma caixa de texto para o usuário -->
-			<textarea></textarea><br><br>
-			<input type="submit" value="Cadastrar">
+			<tr>
+				<td colspan="2">
+					<h4 align="center">&copy;TODOS OS DIREITOS RESERVADOS</h4>
+				</td>
+			</tr>
 
-		</form>
+		</table>
+
 	</body>
-
 </html>
